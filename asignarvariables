@@ -1,0 +1,4 @@
+puts "Escribe un nombre:"
+name = "Rodrigo"
+letters = 7
+message = "Welcome #"
