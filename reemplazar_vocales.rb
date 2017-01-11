@@ -1,7 +1,7 @@
 def replace_vowels(palabras)
   palabras.each do |x|
-    puts x.gsub(/[aeiow]/, 'x')
+    x.gsub!(/[aeiow]/, 'x')
   end
 end
 
-replace_vowels(["castillo", "hola"])
+p replace_vowels(["banana", "apple"]) == ["bxnxnx", "xpplx"]

@@ -1,9 +1,11 @@
 def large(palabra)
   if palabra.length > 20
-    puts palabra.upcase
+    p palabra.upcase
   else
-    puts palabra
+    p palabra
   end
 end
 
-large("hola como estas adios hasta luego")
+#test
+p large("Hola vamos a la comida") == "HOLA VAMOS A LA COMIDA"
+p large("Es hora de dormir") == "Es hora de dormir"

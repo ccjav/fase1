@@ -1,9 +1,12 @@
 def shipping(address)
   if address.include? "Mexico"
-    puts "Order received"
+    p "Order received"
   else
-    puts "We only ship orders to Mexico"
+    p "We only ship orders to Mexico"
   end
 end
 
-shipping('Insurgentes Sur 8932, Alvaro Obregon, Mexico')
+# Pruebas
+
+p shipping('Insurgentes Sur 8932, Alvaro Obregon, Mexico') == "Order received"
+p shipping('Geary Blvd 3320, San Francisco, Estados Unidos') == "We only ship orders to Mexico"
