@@ -6,7 +6,8 @@ p suma == resta
 var1 = 20
 var2 = 10
 
-resta = 290 / var1.to_f
-multiplicacion = resta * var1 + var2
+#Además de asignar una operación aritmética, alteré la precedencia en la variable multiplicación
+resta = var1 - var2
+multiplicacion = resta * (var1 + var2)
 division = multiplicacion / 3
-p division == 100
+p division == 100 
