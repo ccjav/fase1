@@ -1,0 +1,1 @@
+data = { :name => "Javier", :email => "shiordia@gmail.com", :genre => "Male" }
