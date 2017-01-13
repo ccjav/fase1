@@ -6,9 +6,8 @@ def get_index(numbers)
     temp.push(numbers.index(x))
     new_numbers.push(temp)
   end
-  p new_numbers
+  new_numbers
 end
 
-get_index([2, 10, 6, 34, 0, 3])
-
-# get_index([1,22,13,45,554,654,456])
+# test
+p get_index([2, 10, 6, 34, 0, 3]) == [[2, 0], [10, 1], [6, 2], [34, 3], [0, 4], [3, 5]]

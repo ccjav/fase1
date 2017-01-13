@@ -4,7 +4,7 @@ def fizzbuzz(min, max)
 
   while contador <= max
     if (contador % 3 == 0) && (contador % 5 == 0)
-      new_array.push("Fizzbuzz")
+      new_array.push("FizzBuzz")
     elsif contador % 3 == 0
       new_array.push("Fizz")
     elsif contador % 5 == 0
@@ -17,5 +17,6 @@ def fizzbuzz(min, max)
   new_array
 end
 
-p fizzbuzz(3, 5)
-p fizzbuzz(10, 15)
+# Pruebas
+p fizzbuzz(3, 5) == ["Fizz", 4, "Buzz"]
+p fizzbuzz(10, 15) == ["Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]

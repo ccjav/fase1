@@ -1,6 +1,8 @@
 def vowels(palabra)
-  puts palabra.count "aeiou"
-  
+  palabra.count "aeiouAEIOU"
 end
 
-vowels("hola como estas")
+# test
+p vowels("hello") == 2
+p vowels("Magic") == 2
+p vowels("Apologize") == 5
