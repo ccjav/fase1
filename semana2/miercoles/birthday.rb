@@ -13,14 +13,11 @@ end
 
 alice = Person.new
 
-# salice = Person.new
-
-
 # Pruebas
 alice.age = 17
 
-p alice.age# == 17
+p alice.age == 17
 #=> true
-alice.age 
-p Person.birthday# == 18
+alice.age  = 17
+p Person.birthday == 18
 #=> true
