@@ -1,26 +1,26 @@
 class Actor
-   attr_accessor :name, :birth_date
+  attr_accessor :name, :birth_date
 
-   def initialize(name, birth_date)
-     @name = name
-     @birth_date = birth_date
-   end
+  def initialize(name, birth_date)
+    @name = name
+    @birth_date = birth_date
+  end
 
-   def alive?
-     true
-   end
-end
+  def alive?
+    true
+  end
 
-class Bill < Actor
-  def to_s
-    "My birth_date is '#{@birth_date}', my name is #{@name}."
-  end  
-end
-
-class Enry < Actor
   def to_s
     "My birth_date is '#{@birth_date}', my name is #{@name}."
   end
+end
+
+class Bill < Actor
+
+end
+
+class Enry < Actor
+
 end
 
 

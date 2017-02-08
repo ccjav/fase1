@@ -8,12 +8,12 @@ class Person
   end
 
   def name
-    puts "#{first_name} " + "#{last_name}"
+    puts "#{@first_name} " + "#{@last_name}"
   end
 
   def information
-    puts "Name: " + "#{first_name} " + "#{last_name}"
-    puts "Email: " + "#{email}"
+    puts "Name: " + "#{@first_name} " + "#{@last_name}"
+    puts "Email: " + "#{@email}"
   end
 end
 

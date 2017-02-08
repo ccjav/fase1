@@ -1,6 +1,5 @@
 class Stair
   attr_accessor :material
-  attr_writer :size
 
   def initialize(material, size) #constructor
     @material = material
@@ -8,7 +7,7 @@ class Stair
   end
 
   def larger_size_than?(other)
-    size > other.instance_variable_get("@size")
+    @size > other.instance_variable_get("@size")
   end
 
   private
@@ -16,7 +15,7 @@ class Stair
   def size
     @size
   end
-  
+
 end
 
 metal = Stair.new("Metal", 54)
